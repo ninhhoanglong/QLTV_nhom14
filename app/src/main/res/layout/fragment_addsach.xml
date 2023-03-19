@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".btl_nhom14_fragmentaddSach">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THÊM SÁCH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etMaSach"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/customer_edit_app"
+        android:ems="10"
+        android:textColor="@color/purple_700"
+        android:hint="Nhập mã sách . . ."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/etTenSach"
+        android:textColor="@color/purple_700"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tên sách . . ."
+        app:layout_constraintEnd_toEndOf="@+id/etMaSach"
+        app:layout_constraintStart_toStartOf="@+id/etMaSach"
+        app:layout_constraintTop_toBottomOf="@+id/etMaSach" />
+
+    <EditText
+        android:hint="Nhập loại sách . . ."
+        android:textColor="@color/purple_700"
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/etLoaiSach"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etTenSach"
+        app:layout_constraintStart_toStartOf="@+id/etTenSach"
+        app:layout_constraintTop_toBottomOf="@+id/etTenSach" />
+
+    <EditText
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:id="@+id/etTacGia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tác giả . . ."
+        app:layout_constraintEnd_toEndOf="@+id/etLoaiSach"
+        app:layout_constraintStart_toStartOf="@+id/etLoaiSach"
+        app:layout_constraintTop_toBottomOf="@+id/etLoaiSach" />
+
+    <EditText
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/etSoLuong"
+        android:textColor="@color/purple_700"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Nhập số lượng . . ."
+        app:layout_constraintEnd_toEndOf="@+id/etTacGia"
+        app:layout_constraintStart_toStartOf="@+id/etTacGia"
+        app:layout_constraintTop_toBottomOf="@+id/etTacGia" />
+
+    <EditText
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:id="@+id/etGia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Nhập giá sách . . ."
+        app:layout_constraintEnd_toEndOf="@+id/etSoLuong"
+        app:layout_constraintStart_toStartOf="@+id/etSoLuong"
+        app:layout_constraintTop_toBottomOf="@+id/etSoLuong" />
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="100dp"
+        android:padding="10dp"
+        android:text="Thêm Sách"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etGia"
+        app:layout_constraintStart_toStartOf="@+id/etGia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

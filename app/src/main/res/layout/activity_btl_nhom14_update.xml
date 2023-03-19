@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74BBDC"
+    tools:context=".btl_nhom14_activityUpdate">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SÁCH OVEREVIEW"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etmaSU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/customer_edit_app"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/etTenSU"
+        android:enabled="false"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tên sách . . ."
+        app:layout_constraintEnd_toEndOf="@+id/etmaSU"
+        app:layout_constraintStart_toStartOf="@+id/etmaSU"
+        app:layout_constraintTop_toBottomOf="@+id/etmaSU" />
+
+    <EditText
+        android:hint="Nhập loại sách . . ."
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/etLoaiU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etTenSU"
+        app:layout_constraintStart_toStartOf="@+id/etTenSU"
+        app:layout_constraintTop_toBottomOf="@+id/etTenSU" />
+
+    <EditText
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/etTacU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:hint="Nhập tác giả . . ."
+        app:layout_constraintEnd_toEndOf="@+id/etLoaiU"
+        app:layout_constraintStart_toStartOf="@+id/etLoaiU"
+        app:layout_constraintTop_toBottomOf="@+id/etLoaiU" />
+
+    <EditText
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/etSoU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:enabled="false"
+        android:hint="Số lượng . . ."
+        app:layout_constraintEnd_toEndOf="@+id/etTacU"
+        app:layout_constraintStart_toStartOf="@+id/etTacU"
+        app:layout_constraintTop_toBottomOf="@+id/etTacU" />
+
+    <EditText
+        android:background="@drawable/customer_edit_app"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/etGiaU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Gía cả . . ."
+        app:layout_constraintEnd_toEndOf="@+id/etSoU"
+        app:layout_constraintStart_toStartOf="@+id/etSoU"
+        app:layout_constraintTop_toBottomOf="@+id/etSoU" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="100dp"
+        android:padding="10dp"
+        android:text="UPDATE SÁCH"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etGiaU"
+        app:layout_constraintStart_toStartOf="@+id/etGiaU" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
